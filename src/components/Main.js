@@ -15,8 +15,10 @@ function Main ({onEditProfile, onEditCard, onEditAvatar, onCardClick}) {
       setUserName(user.name);
       setUserDescription (user.about);
       setCards(initialCards);
+    }).catch(err => {
+      Api.enterError(err);
     });
-
+  
   }, []);
   
   return(
