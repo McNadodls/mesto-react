@@ -1,0 +1,9 @@
+.buttont_type_like-active {
+  width: 22px;
+  height: 19px;
+  background: url(../../../images/like-icon/aktive.svg) no-repeat center;
+}
+
+.buttont_type_like-active:hover {
+  opacity: 0.5;
+}

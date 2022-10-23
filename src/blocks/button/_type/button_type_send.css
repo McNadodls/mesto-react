@@ -1,0 +1,29 @@
+.button_type_send {
+   font-family: 'Inter', 'Arial', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 17px;
+   text-align: center;
+   color: #FFFFFF;
+   width: 238px;
+   min-height: 46px;
+   margin: 0 auto 25px;
+   background-color: black;
+   border-radius: 2px;
+}
+
+@media screen and (min-width: 900px) {
+   .button_type_send {
+      font-size: 18px;
+      line-height: 22px;
+      width: 358px;
+      min-height: 50px;
+      margin: 0 auto 37px;
+    }
+
+}
+
+.button_type_send:hover {
+    opacity: 0.8;
+}

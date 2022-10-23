@@ -1,0 +1,32 @@
+.popup__input-error {
+  visibility: hidden;
+  font-family: 'Inter', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 0 auto 13px;
+  width: 238px;
+  height: 12px;
+  color: #FF0000;
+}
+
+.popup__input-error:last-of-type{
+  margin: 0 auto 27px;
+}
+
+.popup__input-error:focus, input:focus{
+  outline: 0;
+}
+
+@media screen and (min-width: 900px) {
+  .popup__input-error {
+      width: 358px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .popup__input-error:last-of-type {
+      margin: 0 auto 31px; 
+  }
+}

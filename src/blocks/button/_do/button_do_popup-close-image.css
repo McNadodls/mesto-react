@@ -1,0 +1,13 @@
+.button_do_popup-close-image {
+  position: absolute;
+    right: 0;
+    top: -36px;
+    padding: 0;
+}
+
+@media screen and (min-width: 900px) {
+    .button_do_popup-close-image {
+        right: -40px;
+        top: -40px;
+    }
+}
