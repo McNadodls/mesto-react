@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .button_do_popup-close-tooltip {
   position: relative;
     left: 262px;
@@ -10,4 +11,18 @@
         left: 440px;
         top: -40px;
     }
+=======
+.button_do_popup-close-tooltip {
+  position: relative;
+    left: 262px;
+    top: -36px;
+    padding: 0;
+}
+
+@media screen and (min-width: 900px) {
+    .button_do_popup-close-tooltip {
+        left: 440px;
+        top: -40px;
+    }
+>>>>>>> c7baf28ad85f6f5949ab4e0648b2a5ad4030a529
 } 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .authForm__title {
   font-family: 'Inter', 'Arial', sans-serif;
   font-style: normal;
@@ -18,3 +19,25 @@
   }
 } 
 
+=======
+.authForm__title {
+  font-family: 'Inter', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0px auto 40px;
+  height: 24px;
+}
+@media screen and (min-width: 900px) {
+  .authForm__title {
+    font-size: 24px;
+    line-height: 29px;
+    height: 29px;
+    margin: 0px auto 50px;
+  }
+} 
+
+>>>>>>> c7baf28ad85f6f5949ab4e0648b2a5ad4030a529

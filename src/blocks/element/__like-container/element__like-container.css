@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 .element__like-container {
   display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+=======
+.element__like-container {
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+>>>>>>> c7baf28ad85f6f5949ab4e0648b2a5ad4030a529
 }

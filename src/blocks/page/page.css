@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .page {
     max-width: 320px;
     margin: 0 auto;
@@ -9,4 +10,17 @@
         max-width: 880px;
     }
 
+=======
+.page {
+    max-width: 320px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+@media screen and (min-width: 900px) {
+    .page {
+        max-width: 880px;
+    }
+
+>>>>>>> c7baf28ad85f6f5949ab4e0648b2a5ad4030a529
 }

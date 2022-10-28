@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .profile__subtitle {
     font-family: 'Inter', 'Arial', sans-serif;
     font-style: normal;
@@ -16,4 +17,24 @@
         text-align: start;
         line-height: 22px;
     }
+=======
+.profile__subtitle {
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+    grid-column: 1/-1;
+    grid-row: 2/3;
+}
+@media screen and (min-width: 900px) {
+    .profile__subtitle {
+        font-size: 18px;
+        text-align: start;
+        line-height: 22px;
+    }
+>>>>>>> c7baf28ad85f6f5949ab4e0648b2a5ad4030a529
 } 

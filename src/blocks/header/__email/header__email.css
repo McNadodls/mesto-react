@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .header__email {
   font-family: 'Inter', 'Arial', sans-serif;
   font-style: normal;
@@ -16,4 +17,24 @@
     font-size: 18px;
     line-height: 22px;
   }
+=======
+.header__email {
+  font-family: 'Inter', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+  margin-right: 24px;
+  text-decoration: none;
+}
+@media screen and (min-width: 900px) {
+  .header__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+>>>>>>> c7baf28ad85f6f5949ab4e0648b2a5ad4030a529
 } 

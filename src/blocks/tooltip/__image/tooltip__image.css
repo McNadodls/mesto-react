@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .tooltip__image {
   width: 120px;
   height: 120px;
@@ -8,4 +9,16 @@
   .tooltip__image {
     margin: 28px auto 32px;
   }
+=======
+.tooltip__image {
+  width: 120px;
+  height: 120px;
+  margin: 18px auto 40px;
+}
+
+@media screen and (min-width: 900px) {
+  .tooltip__image {
+    margin: 28px auto 32px;
+  }
+>>>>>>> c7baf28ad85f6f5949ab4e0648b2a5ad4030a529
 } 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .footer__copyright {
     font-family: 'Inter', 'Arial', sans-serif;
     font-style: normal;
@@ -15,4 +16,23 @@
         line-height: 22px;
         margin: 0;
     }
+=======
+.footer__copyright {
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #545454;
+    margin: 0;
+    margin-left: 19px;
+}
+
+@media screen and (min-width: 900px) {
+    .footer__copyright {
+        font-size: 18px;
+        line-height: 22px;
+        margin: 0;
+    }
+>>>>>>> c7baf28ad85f6f5949ab4e0648b2a5ad4030a529
 } 

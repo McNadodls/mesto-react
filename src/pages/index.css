@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts/inter/inter.css);
 
@@ -80,3 +81,73 @@
 @import url(../blocks/popup/__input-error/_active/popup__input-error_active.css);
 @import url(../blocks/popup/__image/popup__image.css);
 @import url(../blocks/popup/__signature/popup__signature.css);
+=======
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts/inter/inter.css);
+
+@import url(../blocks/button/button.css);
+@import url(../blocks/button/_type/button_type_add.css);/*в можификаторе _type находится только внешний вид кнопки*/
+@import url(../blocks/button/_type/button_type_close.css);
+@import url(../blocks/button/_type/button_type_edit.css);
+@import url(../blocks/button/_type/buttont_type_like.css);
+@import url(../blocks/button/_type/buttont_type_like-active.css);
+@import url(../blocks/button/_type/button_type_send.css);
+@import url(../blocks/button/_type/button_type_delete.css);
+@import url(../blocks/button/_type/buttont_type_disabled.css);/*disabled*/
+@import url(../blocks/button/_do/button_do_element-delete.css);/*В одификаторе _do присваивается расположение относительно других элементов и вривязка к JS*/
+@import url(../blocks/button/_do/button_do_popup-close-card.css);
+@import url(../blocks/button/_do/button_do_popup-close-image.css);
+@import url(../blocks/button/_do/button_do_popup-close-profile.css);
+@import url(../blocks/button/_do/button_do_popup-close-confirm.css);
+@import url(../blocks/button/_do/button_do_popup-close-avatar.css);
+@import url(../blocks/button/_do/button_do_popup-create.css);
+@import url(../blocks/button/_do/button_do_popup-edit-profile.css);
+@import url(../blocks/button/_do/button_do_popup-confirm.css);
+@import url(../blocks/button/_do/button_do_profile-add.css);
+@import url(../blocks/button/_do/button_do_profile-edit.css);
+@import url(../blocks/button/_none/button_none.css);
+
+@import url(../blocks/body/body.css);
+@import url(../blocks/page/page.css);
+@import url(../blocks/text-overflow/text-overflow.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/content/content.css);
+@import url(../blocks/profile/profile.css);
+@import url(../blocks/profile/__card/profile__card.css);
+@import url(../blocks/profile/__image/profile__image.css);
+@import url(../blocks/profile/__info/profile__info.css);
+@import url(../blocks/profile/__title/profile__title.css);
+@import url(../blocks/profile/__subtitle/profile__subtitle.css);
+@import url(../blocks/elements/elements.css);
+@import url(../blocks/element/element.css);
+@import url(../blocks/element/__image/element__image.css);
+@import url(../blocks/element/__group/element__group.css);
+@import url(../blocks/element/__signature/element__signature.css);
+@import url(../blocks/element/__like-container/element__like-container.css);
+@import url(../blocks/element/__counter/element__counter.css);
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__copyright/footer__copyright.css);
+
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/_type/popup_type_profile.css);
+@import url(../blocks/popup/_type/popup_type_card.css);
+@import url(../blocks/popup/_type/popup_type_img.css);
+@import url(../blocks/popup/_type/popup_type_avatar.css);
+@import url(../blocks/popup/_type/popup_type_confirm.css);
+@import url(../blocks/popup/_opened/popup_opened.css);
+@import url(../blocks/popup/__container/popup__container.css);
+@import url(../blocks/popup/__image-container/popup__image-container.css);
+@import url(../blocks/popup/__form/popup__form.css);
+@import url(../blocks/popup/__title/popup__title.css);
+@import url(../blocks/popup/__title/_size/popup__title_size_l.css);
+@import url(../blocks/popup/__title/_size/popup__title_size_m.css);
+@import url(../blocks/popup/__input/popup__input.css);
+@import url(../blocks/popup/__input/_type/popup__input_type_error.css);/*Бордер ошибки*/
+@import url(../blocks/popup/__input/_type/popup__input_type_name.css);
+@import url(../blocks/popup/__input/_type/popup__input_type_profession.css);
+@import url(../blocks/popup/__input-error/popup__input-error.css);/*текст ошибки*/
+@import url(../blocks/popup/__input-error/_active/popup__input-error_active.css);
+@import url(../blocks/popup/__image/popup__image.css);
+@import url(../blocks/popup/__signature/popup__signature.css);
+>>>>>>> c7baf28ad85f6f5949ab4e0648b2a5ad4030a529

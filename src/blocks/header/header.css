@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .header{
     display: flex;
     align-items: center;
@@ -16,4 +17,24 @@
     margin-bottom: 36.25px;
     }
 
+=======
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 55px;
+    margin-top: 28px;
+    margin-bottom: 38.25px;
+    border-bottom: 1px solid rgba(84, 84, 84, 0.7); 
+} 
+
+@media screen and (min-width: 900px) {
+    .header {
+    min-height: 73px;
+    margin-top: 45px;
+    margin-bottom: 36.25px;
+    }
+
+>>>>>>> c7baf28ad85f6f5949ab4e0648b2a5ad4030a529
 }

@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 .popup__form {
   display: flex;
   flex-direction: column;
   width: 100%;
+=======
+.popup__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+>>>>>>> c7baf28ad85f6f5949ab4e0648b2a5ad4030a529
 }

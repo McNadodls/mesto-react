@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .button {
     border: none;
     outline: none;
@@ -5,3 +6,12 @@
     cursor: pointer;
     padding: 0;
 }
+=======
+.button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+>>>>>>> c7baf28ad85f6f5949ab4e0648b2a5ad4030a529

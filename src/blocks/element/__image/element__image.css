@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .element__image {
     width:100%;
     width:282px;
@@ -8,4 +9,16 @@
 
 .element__image:hover {
     cursor: pointer;
+=======
+.element__image {
+    width:100%;
+    width:282px;
+    height:100%;
+    max-height:282px;
+    object-fit:cover;
+}
+
+.element__image:hover {
+    cursor: pointer;
+>>>>>>> c7baf28ad85f6f5949ab4e0648b2a5ad4030a529
 }

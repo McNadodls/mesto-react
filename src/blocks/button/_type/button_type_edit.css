@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .button_type_edit {
   background: url(../../../images/profile/pensil.svg) no-repeat center;
     background-size: 7.5px 7.5px;
@@ -17,3 +18,24 @@
 .button_type_edit:hover {
     opacity: 0.6;
 }
+=======
+.button_type_edit {
+  background: url(../../../images/profile/pensil.svg) no-repeat center;
+    background-size: 7.5px 7.5px;
+    width: 16px;
+    min-height: 16px;
+    border: 1px solid #fff;
+}
+
+@media screen and (min-width: 900px) {
+    .button_type_edit {
+        background-size: 10px 10px;
+        width: 22px;
+        min-height: 22px;
+    }
+} 
+
+.button_type_edit:hover {
+    opacity: 0.6;
+}
+>>>>>>> c7baf28ad85f6f5949ab4e0648b2a5ad4030a529

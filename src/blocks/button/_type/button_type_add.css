@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .button_type_add { 
     background: url(../../../images/profile/plus.svg) no-repeat center;
     background-size: 16px 16px;
@@ -17,4 +18,25 @@
 
 .button_type_add:hover {
     opacity: 0.6;
+=======
+.button_type_add { 
+    background: url(../../../images/profile/plus.svg) no-repeat center;
+    background-size: 16px 16px;
+    width: 280px;
+    min-height: 48px;
+    border: 2px solid #fff;
+    border-radius: 2px;
+}
+
+@media screen and (min-width: 900px) {
+    .button_type_add {
+        background-size: 22px 22px;
+        width: 148px;
+        min-height: 48px;
+    }
+} 
+
+.button_type_add:hover {
+    opacity: 0.6;
+>>>>>>> c7baf28ad85f6f5949ab4e0648b2a5ad4030a529
 }

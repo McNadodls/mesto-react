@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 .popup__image-container {
   position: relative;
   margin: auto;
   display: flex;
   flex-direction: column;
+=======
+.popup__image-container {
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+>>>>>>> c7baf28ad85f6f5949ab4e0648b2a5ad4030a529
 }

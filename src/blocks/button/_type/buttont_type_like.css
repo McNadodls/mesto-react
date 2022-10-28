@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .buttont_type_like {
   width: 22px;
   height: 19px;
@@ -6,4 +7,14 @@
 
 .buttont_type_like:hover {
   opacity: 0.5;
+=======
+.buttont_type_like {
+  width: 22px;
+  height: 19px;
+  background: url(../../../images/like-icon/like.svg) no-repeat center;
+}
+
+.buttont_type_like:hover {
+  opacity: 0.5;
+>>>>>>> c7baf28ad85f6f5949ab4e0648b2a5ad4030a529
 }

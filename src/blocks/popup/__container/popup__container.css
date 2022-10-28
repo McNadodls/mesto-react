@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .popup__container {
     width: 282px;
     margin: auto;
@@ -13,4 +14,21 @@
         width: 430px;
     }
 
+=======
+.popup__container {
+    width: 282px;
+    margin: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 900px) {
+    .popup__container {
+        width: 430px;
+    }
+
+>>>>>>> c7baf28ad85f6f5949ab4e0648b2a5ad4030a529
 }
