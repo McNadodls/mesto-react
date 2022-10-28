@@ -8,7 +8,7 @@ import ImagePopup from "./popup/ImagePopup.js";
 import Main from "./Main.js";
 import Api from "../utils/Api.js";
 import React, {useEffect, useState} from 'react';
-import {Route, Redirect, NavLink, Switch, useRouteMatch } from 'react-router-dom';
+import {Route, Redirect, Switch, useRouteMatch } from 'react-router-dom';
 import {CurrentUserContext} from '../contexts/CurrentUserContext.js';
 import FormValues from "./FormValues.js";
 import ProtectedRoute from "./ProtectedRoute.js";

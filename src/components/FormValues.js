@@ -1,6 +1,5 @@
-import PopupWithForm from "./popup/PopupWithForm.js";
-import React, {useEffect, useState, useContext} from 'react';
-import EditProfilePopup from "./popup/EditProfilePopup.js";
+import React, { useState } from 'react';
+
 
 export default function FormValues(inputValues) {
   const [values, setValues] = useState(inputValues);
