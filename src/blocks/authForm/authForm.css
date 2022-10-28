@@ -1,0 +1,15 @@
+.authForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 260px;
+    margin: 0px auto;
+
+}
+
+@media screen and (min-width: 900px) {
+    .authForm {
+      max-width: 358px;
+      margin: 4px auto 0px;
+    }
+} 

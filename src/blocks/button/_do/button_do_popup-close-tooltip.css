@@ -1,0 +1,13 @@
+.button_do_popup-close-tooltip {
+  position: relative;
+    left: 262px;
+    top: -36px;
+    padding: 0;
+}
+
+@media screen and (min-width: 900px) {
+    .button_do_popup-close-tooltip {
+        left: 440px;
+        top: -40px;
+    }
+} 

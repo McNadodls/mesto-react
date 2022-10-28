@@ -1,0 +1,12 @@
+.header__logo {
+    margin-left: 27px;
+    width: 104px; /*в макене 103.74px я округлил*/
+    
+}
+
+    @media screen and (min-width: 900px) {
+    .header__logo {
+        margin-left: 0;
+        width: 142px;
+    }
+}
