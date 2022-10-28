@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
-import InfoTooltip from './InfoTooltip.js'
+import InfoTooltip from './popup/InfoTooltip.js'
 
 function AuthForm (props) {
   const [email, setEmail] = useState('');

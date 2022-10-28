@@ -3,12 +3,6 @@ class Auth {
     this._baseUrl = baseUrl;
   }
 
-  _checkResponse (res) {
-    if (res.ok) {
-      return res.json();
-    }
-    return this.enterError(res);
-  }
   enterError (err) {
     Promise.reject(`Ошибка: ${err.status}`);
   }
@@ -24,7 +18,8 @@ class Auth {
         "password": password
       })
     })
-    .then(this._checkResponse);
+    .then((res) => { if (res.ok) {return res.json()}})
+            .then(res => res);
   }
 
   signin(email, password) {
@@ -38,19 +33,23 @@ class Auth {
         "password": password
       })
     })
-    .then(this._checkResponse);
+    .then((res) => { if (res.ok) {return res.json()}})
+            .then(res => res);
   }
 
-  getUserInfo(email, token) {
-    return fetch(`${this._baseUrl}/signin`, {
-      method: 'GET',
-      headers:{
-        "Content-Type": "application/json",
-    "Authorization" : `Bearer ${token}`
-      }
+  getToken (jwt) {
+    return fetch(`${this._baseUrl}/users/me`, {
+        method: 'GET',
+        headers: {
+            "Content-Type": "application/json",
+            "Authorization" : `Bearer ${jwt}`
+        }
     })
-    .then(this._checkResponse);
+        .then((res) => { if (res.ok) {return res.json()}})
+        .then(res=>res);
   }
+
+
 
 
 }
