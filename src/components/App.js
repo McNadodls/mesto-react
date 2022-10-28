@@ -8,11 +8,25 @@ import ImagePopup from "./popup/ImagePopup.js";
 import Main from "./Main.js";
 import Api from "../utils/Api.js";
 import React, {useEffect, useState} from 'react';
+import {Route, Redirect, NavLink, Switch, useRouteMatch } from 'react-router-dom';
 import {CurrentUserContext} from '../contexts/CurrentUserContext.js';
 import FormValues from "./FormValues.js";
+import ProtectedRoute from "./ProtectedRoute.js";
+import Login from './Login.js';
+import Register from './Register.js';
+import { useParams, useHistory } from 'react-router-dom'; 
+
+import Auth from "../utils/Auth.js";
+
 
 
 function App() {
+  const [loggedIn, setLoggedIn] = React.useState(false);
+  const history = useHistory(); 
+  const { path, url } = useRouteMatch();
+  console.log(path);
+  
+
   const [stateEditProfile, swapStateEditProfile] = React.useState(false);
   const [stateEditCard, swapStateEditCard] = React.useState(false);
   const [stateEditAvatar, swapStateEditAvatar] = React.useState(false);
@@ -104,24 +118,65 @@ function App() {
   }
   const {values, handleChange, setValues} = FormValues({});
 
+    
+	function handleSubmitRegistry(email, pass) {
+		Auth.singnup(email, pass).then((res) => {
+			history.push('/sign-in');
+		}).catch(err => {
+      Auth.enterError(err);
+    });
+	}
 
+  function handleSubmitSignIn(email, pass) {
+		Auth.signin(email, pass).then((res) => {
+			localStorage.setItem('jwt', res.token);
+			console.log(localStorage.getItem('jwt'))
+      setLoggedIn(true);
+			history.push('/main');
+		}).catch(err => {
+      Auth.enterError(err);
+    });
+	}
 
   return (
     <CurrentUserContext.Provider value={currentUser}>
       <div className="body">
         <div className="page">
-          <Header />
-          <Main 
-              onEditProfile={handleEditProfile}
-              onEditCard={handleEditCard}
-              onEditAvatar={handleEditAvatar}
-              onCardClick={handleCardImage}
-              onClosePopup={closeAllPopups}
-              cards={cards}
-              handleLikeClick={handleCardLike}
-              handleCardDelete={handleCardDelete}
-            />
-          <Footer />
+
+        
+        <Header loggedIn={loggedIn} />
+        
+          <Switch>
+          
+          <ProtectedRoute 
+            path="/Main"
+            component={Main}
+            onEditProfile={handleEditProfile}
+            onEditCard={handleEditCard}
+            onEditAvatar={handleEditAvatar}
+            onCardClick={handleCardImage}
+            onClosePopup={closeAllPopups}
+            cards={cards}
+            handleLikeClick={handleCardLike}
+            handleCardDelete={handleCardDelete}
+            loggedIn={loggedIn}
+          />
+          <ProtectedRoute
+            path="/Main"
+            component={Footer}
+            loggedIn={loggedIn}
+          />
+          <Route exact path="/">
+            {false ? <Redirect to="/Main" /> : <Redirect to="/sign-in" />}
+          </Route>
+          <Route path="/sign-in"> 
+            <Login onSubmit={handleSubmitSignIn} history={history} />
+          </Route>
+          <Route path="/sign-up">
+            <Register onSubmit={handleSubmitRegistry} history={history} />
+          </Route>
+          
+          </Switch>
         </div>
       </div>
       <ImagePopup cardInfo={stateCardImage} onClose={closeAllPopups}></ImagePopup>
